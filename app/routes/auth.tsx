@@ -13,6 +13,7 @@ const Auth = () => {
     const navigate = useNavigate();
 
     const name= "Ghala"
+    const age = 22
 
     useEffect(() => {
         if(auth.isAuthenticated) navigate(next);
