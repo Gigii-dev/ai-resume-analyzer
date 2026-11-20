@@ -12,9 +12,6 @@ const Auth = () => {
     const next = location.search.split('next=')[1];
     const navigate = useNavigate();
 
-    const name= "Ghala"
-    const age = 22
-
     useEffect(() => {
         if(auth.isAuthenticated) navigate(next);
     }, [auth.isAuthenticated, next])
